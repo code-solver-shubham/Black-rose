@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Divuuu — The Black Rose 🖤🌹</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:#040207;color:#f7f0f4;font-family:Georgia,"Times New Roman",serif}
+body{overflow-x:hidden}
+.sky{
+position:fixed;inset:0;z-index:-3;
+background:
+radial-gradient(circle at 50% 20%,rgba(55,55,62,.24),transparent 32%),
+radial-gradient(circle at 10% 90%,rgba(35,35,42,.25),transparent 30%),
+linear-gradient(180deg,#020104,#09050a 60%,#020204)
+}
+.stars{
+position:fixed;inset:0;z-index:-2;opacity:.55;
+background-image:
+radial-gradient(#fff 1px,transparent 1.5px),
+radial-gradient(#d7b8c8 1px,transparent 1.5px);
+background-size:101px 113px,167px 149px;
+background-position:17px 23px,51px 77px;
+animation:twinkle 5s ease-in-out infinite alternate
+}
+@keyframes twinkle{to{opacity:.9}}
+
+.wrap{width:min(900px,92%);margin:auto}
+.hero{
+min-height:100vh;display:flex;flex-direction:column;
+justify-content:center;align-items:center;text-align:center
+}
+.eyebrow{
+font:11px Arial,sans-serif;letter-spacing:4px;
+text-transform:uppercase;color:#a9a9b3;margin-bottom:25px
+}
+
+.rose-stage{
+width:300px;height:350px;display:flex;
+align-items:center;justify-content:center;position:relative
+}
+.glow{
+position:absolute;width:220px;height:220px;border-radius:50%;
+background:rgba(220,220,230,.06);filter:blur(28px);
+animation:glow 3.5s ease-in-out infinite
+}
+@keyframes glow{50%{transform:scale(1.16);opacity:.6}}
+
+.rose{
+position:relative;width:165px;height:245px;
+cursor:pointer;filter:drop-shadow(0 20px 25px #000);
+animation:sway 5s ease-in-out infinite;
+transition:.4s
+}
+.rose:hover{transform:scale(1.04)}
+@keyframes sway{
+0%,100%{rotate:-1deg}
+50%{rotate:2deg;translate:0 -7px}
+}
+
+.stem{
+position:absolute;left:78px;top:105px;width:8px;height:135px;
+border-radius:9px;
+background:linear-gradient(90deg,#101710,#42583b,#101810)
+}
+.leaf{
+position:absolute;width:72px;height:35px;
+background:linear-gradient(135deg,#09120b,#40533a);
+border-radius:100% 0 100% 0
+}
+.leaf.left{left:20px;top:155px;transform:rotate(22deg)}
+.leaf.right{left:76px;top:180px;transform:scaleX(-1) rotate(15deg)}
+
+.flower{
+position:absolute;left:10px;top:5px;width:150px;height:130px
+}
+.petal{
+position:absolute;
+background:
+radial-gradient(circle at 45% 35%,#432634 0,#120a11 47%,#020103 80%);
+border-radius:55% 45% 60% 40%;
+box-shadow:inset 0 0 13px rgba(255,255,255,.06),0 0 9px #000
+}
+.p1{width:72px;height:98px;left:39px;top:20px;rotate:-5deg}
+.p2{width:67px;height:93px;left:3px;top:34px;rotate:-35deg}
+.p3{width:67px;height:93px;left:80px;top:31px;rotate:35deg}
+.p4{width:68px;height:90px;left:24px;top:7px;rotate:-22deg}
+.p5{width:68px;height:90px;left:57px;top:5px;rotate:22deg}
+.p6{
+width:77px;height:82px;left:36px;top:40px;
+background:radial-gradient(circle,#030303,#000 72%);
+rotate:2deg
+}
+.flower:after{
+content:"";position:absolute;left:61px;top:56px;
+width:28px;height:38px;border-radius:50%;
+background:#020103;box-shadow:0 0 16px rgba(255,255,255,.06)
+}
+
+h1{
+font-size:clamp(3rem,10vw,5.8rem);
+font-weight:400;line-height:.9;margin:0
+}
+h1 small{
+display:block;color:#d2d2dc;font-size:.42em;
+letter-spacing:5px;margin-top:15px
+}
+.subtitle{
+max-width:650px;color:#c3c3cc;line-height:1.8;
+margin:27px 0 0;font-size:1rem
+}
+.tap{
+font:12px Arial,sans-serif;color:#a8a8b2;
+letter-spacing:2px;margin-top:32px;animation:pulse 1.7s infinite alternate
+}
+@keyframes pulse{to{opacity:.4}}
+
+.card{
+margin:20px 0 70px;padding:40px 25px;
+border:1px solid rgba(225,225,235,.12);
+border-radius:26px;background:rgba(13,8,14,.82);
+backdrop-filter:blur(10px);
+box-shadow:0 25px 90px rgba(0,0,0,.55)
+}
+.card h2{
+text-align:center;font-weight:400;
+font-size:clamp(1.7rem,5vw,2.6rem);
+margin:0 0 30px
+}
+.letter{
+max-width:720px;margin:auto;color:#d7d7df;
+line-height:2;font-size:1.04rem
+}
+.letter p{margin:0 0 21px}
+.quote{
+text-align:center;color:#f0f0f4;
+font-size:1.35rem;font-style:italic;
+margin:34px 0;line-height:1.7
+}
+.line{width:65px;height:1px;background:rgba(220,220,230,.3);margin:31px auto}
+
+button{
+display:block;margin:30px auto 0;
+border:1px solid rgba(230,230,240,.3);
+background:rgba(255,255,255,.06);
+color:#fff;border-radius:999px;
+padding:13px 23px;font:inherit;cursor:pointer;
+transition:.3s
+}
+button:hover{background:rgba(255,255,255,.12);transform:translateY(-2px)}
+
+.reveal{
+display:none;text-align:center;max-width:680px;
+margin:30px auto 0;color:#d9d9e0;
+line-height:2
+}
+.reveal.show{display:block;animation:appear .8s ease}
+@keyframes appear{
+from{opacity:0;transform:translateY(15px)}
+to{opacity:1;transform:none}
+}
+footer{
+text-align:center;color:#777780;
+font:11px Arial,sans-serif;letter-spacing:2px;
+padding-bottom:55px
+}
+@media(max-width:600px){
+.rose-stage{height:310px}
+.card{padding:30px 20px}
+.letter{font-size:.98rem;line-height:1.9}
+}
+</style>
+</head>
+
+<body>
+<div class="sky"></div>
+<div class="stars"></div>
+
+<main class="wrap">
+
+<section class="hero">
+
+<div class="eyebrow">
+gift 02 · for Divuuu, who wished for a black rose
+</div>
+
+<div class="rose-stage">
+<div class="glow"></div>
+
+<div class="rose" id="rose" title="Tap the rose">
+
+<div class="flower">
+<i class="petal p1"></i>
+<i class="petal p2"></i>
+<i class="petal p3"></i>
+<i class="petal p4"></i>
+<i class="petal p5"></i>
+<i class="petal p6"></i>
+</div>
+
+<div class="stem"></div>
+<i class="leaf left"></i>
+<i class="leaf right"></i>
+
+</div>
+</div>
+
+<h1>
+For Divuuu
+<small>one black rose, finally</small>
+</h1>
+
+<p class="subtitle">
+A flower that is difficult to find here,
+but somehow became one of the little wishes
+you wanted someone to fulfil with their own hands.
+</p>
+
+<div class="tap" id="tap">
+tap the rose 🖤🌹
+</div>
+
+</section>
+
+
+<section class="card">
+
+<h2>“Kaash koi mujhe black rose de…”</h2>
+
+<div class="letter">
+
+<p>
+Divuuu bacha, aapne kabhi black rose ke baare mein bataya tha…
+aur tab se mere dimaag mein ek chhoti si baat reh gayi.
+</p>
+
+<p>
+Aapko black rose itna pasand hai, aur aapka wish hai ki
+koi aapko woh apne haath se de.
+Aur mujhe sabse zyada bura isi baat ka laga ki
+main screen ke is paar hoon, aapke paas nahi…
+warna shayad main bas ek black rose lekar
+aapke saamne khada hota aur bina kuch clever bole
+aapko de deta.
+</p>
+
+<p>
+Aur Amazon jungle wala woh doosra beautiful flower bhi yaad hai
+jo aapko pasand hai.
+Kuch cheezein chhoti lagti hain,
+lekin jab kisi apne ki favourite hoti hain na…
+toh woh chhoti nahi rehti.
+</p>
+
+<div class="line"></div>
+
+<p class="quote">
+“Aapko phool dene ki wish thi…<br>
+isliye maine ek chhota sa garden bana diya.” 🖤
+</p>
+
+<div class="line"></div>
+
+<p>
+Main jaanta hoon ye screen par bana hua rose hai.
+Isme mitti ki khushboo nahi hai,
+iske kaante nahi hain,
+aur ye aapke haath mein pakda hua real flower bhi nahi hai.
+</p>
+
+<p>
+But I wanted to make one thing real —
+<b>the thought behind it.</b>
+</p>
+
+<p>
+Agar kabhi koi aapko black rose na de paaye,
+toh please ye mat sochna ki aapka wish chhota tha.
+Aapke little wishes matter.
+Aapki favourite cheezein matter.
+Aapki woh random baatein jo aap casually bol deti ho…
+woh bhi mere liye yaad rakhne layak hain.
+</p>
+
+<p>
+And one day, when distance isn't sitting between us,
+I still want to give you a real black rose
+with my own hands.
+</p>
+
+<p>
+Tab shayad main kuch bol bhi na paun,
+kyunki aapke saamne aakar main waise bhi shy ho jaata hoon. 😂
+</p>
+
+<p>
+Bas flower aapko de dunga…
+aur shayad dheere se bolunga:
+</p>
+
+<p class="quote">
+“Ye woh wala hai na, jo aap chahti thi?” 🌹
+</p>
+
+</div>
+
+<button id="btn">
+There's something inside the rose…
+</button>
+
+<div class="reveal" id="reveal">
+
+<p>
+Is rose ka colour black hai…
+but meri wish aapke liye bilkul opposite hai.
+</p>
+
+<p>
+Main chahta hoon aapki life mein jitne bhi dark days aaye hain,
+unke baad aapko hamesha thoda sa light mile.
+</p>
+
+<p>
+Jab aap lonely feel karo —
+yaad rakhna, aapko samajhne ki koshish karne wala
+ek insaan hai.
+</p>
+
+<p>
+Jab aapko lage ki koi aapko nahi samajhta —
+please khud ko prove karne mein mat thakna.
+</p>
+
+<p>
+Jab aap sad ho — moon ko dekh lena. 🌙
+</p>
+
+<p>
+And when you see this black rose…
+remember that somewhere,
+a boy who can't draw flowers properly
+still tried to make one for his favourite girl.
+</p>
+
+<p class="quote">
+“Real black rose abhi nahi de paaya…<br>
+par uski wish yaad rakhi hai, Divuuu bacha.” 🖤🌹
+</p>
+
+<p>
+— aapka Shubham ❤️
+</p>
+
+</div>
+
+</section>
+
+<footer>
+02 / 23 · for Divuuu · 13 January → 10 October
+</footer>
+
+</main>
+
+<script>
+const rose=document.getElementById("rose");
+const tap=document.getElementById("tap");
+const btn=document.getElementById("btn");
+const reveal=document.getElementById("reveal");
+
+rose.addEventListener("click",()=>{
+tap.textContent="you found your black rose 🖤🌹";
+document.querySelector(".card").scrollIntoView({behavior:"smooth"});
+});
+
+btn.addEventListener("click",()=>{
+reveal.classList.toggle("show");
+
+btn.textContent=reveal.classList.contains("show")
+? "Keep your rose with you 🖤"
+: "There's something inside the rose…";
+
+if(reveal.classList.contains("show")){
+setTimeout(()=>{
+reveal.scrollIntoView({behavior:"smooth",block:"center"});
+},120);
+}
+});
+</script>
+
+</body>
+</html>
